@@ -7,24 +7,29 @@
   margin: 0;
   max-width: 100%;
 }
-html, body {
+html {
+  background-color: #ededed;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
   font-family: 'Titillium Web', sans-serif;
   width: 100vw;
+  display: flex;
+  justify-content: center;
   height: 100vh;
 }
-
+ul{
+  list-style: none;
+}
 .header {
   grid-area: hd;
-  background-color: #f2f2f2;
   z-index: 1;
 }
 
 .container {
   display:grid;
   width: 100%;
+  max-width: 1280px;
   height: 100%;
   grid-template-rows: auto 75%;
   grid-template-columns: 15% auto;
@@ -42,7 +47,6 @@ html, body {
 
 .sd {
   grid-area: sd;
-  background-color: #f2f2f2;
 }
 .footer {
   display: flex;
@@ -50,11 +54,6 @@ html, body {
   justify-content: center;
   align-items: center;
   grid-area: ft;
-  background-color: #f2f2f2;
-  /*position: fixed;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*right: 0;*/
 }
 
 /* ==========================================================================
