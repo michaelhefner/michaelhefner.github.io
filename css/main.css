@@ -1,3 +1,4 @@
+@import "normalize.css";
 /* ==========================================================================
 Global
    ========================================================================== */
@@ -255,3 +256,6 @@ CARD
   border-radius: 50%;
   border: none;
 }
+@import "large.css";
+@import "medium.css";
+@import "small.css";
