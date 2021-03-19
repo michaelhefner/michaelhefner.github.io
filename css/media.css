@@ -8,6 +8,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  html {
+    background: #fff linear-gradient(135deg, blueviolet 5%, #fff 5%, #fff 90%, blueviolet 90%, blueviolet 97.5%, #444 97.5%) no-repeat fixed;
+  }
   .sd ul li a {
     padding: 12.5px 2.5px;
     font-size: small;
@@ -44,6 +47,9 @@
 
 
 @media only screen and (max-width: 320px) {
+  html {
+    background: #fff linear-gradient(135deg, blueviolet 5%, #fff 5%, #fff 90%, blueviolet 90%, blueviolet 97.5%, #444 97.5%) no-repeat fixed;
+  }
   .jumbo{
     display: none;
   }
