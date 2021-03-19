@@ -17,7 +17,7 @@ html {
   justify-content: center;
   height: 100vh;
   min-height: 100%;
-  background: #fff linear-gradient(135deg, blueviolet 7.5%, #fff 7.5%, #fff 85%, blueviolet 85%, blueviolet 95%, #444 95%) no-repeat fixed;
+  background: #fff linear-gradient(135deg, blueviolet 100px, #fff 100px, #fff 85%, blueviolet 85%, blueviolet 95%, #444 95%) no-repeat fixed;
 }
 blockquote{
   padding: 1rem 4rem;
@@ -175,6 +175,28 @@ BIO
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+/* ==========================================================================
+Comment Form
+   ========================================================================== */
+.comment-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+textarea{
+  border: none;
+  background: transparent;
+  box-shadow: 0 0 2px rgba(0,0,0, .2);
+  padding: .5rem;
+  margin: .25rem;
+}
+button{
+  margin-left: auto;
+  padding: .5rem 1rem;
+  background: rebeccapurple;
+  border: none;
+  color: #fff;
 }
 /* ==========================================================================
 Gutter
