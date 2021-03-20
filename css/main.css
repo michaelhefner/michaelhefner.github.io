@@ -20,10 +20,12 @@ html {
   min-height: 100%;
   background: #fff linear-gradient(135deg, blueviolet 100px, #fff 100px, #fff 85%, blueviolet 85%, blueviolet 95%, #444 95%) no-repeat fixed;
 }
+
 blockquote{
   padding: 1rem 4rem;
   font-style: italic;
 }
+
 /* ==========================================================================
 Nav
    ========================================================================== */
@@ -108,7 +110,6 @@ Body
    ========================================================================== */
 
 .container {
-
   display: grid;
   width: 100%;
   height: 100%;
@@ -139,7 +140,6 @@ article h2 {
   font-weight: bolder;
 }
 
-
 article p {
   color: #333;
   max-width: 75%;
@@ -151,6 +151,7 @@ article p {
   width: 100%;
   background-color: rgba(0, 0, 0, .2);
 }
+
 img {
   opacity: .6;
 }
@@ -158,33 +159,52 @@ img {
 /* ==========================================================================
 BIO
    ========================================================================== */
+
 .bio {
+
+  display: grid;
+  grid-template-rows: 30% auto 30%;
+  grid-template-columns: 10% 30% auto;
+  grid-template-areas:
+      "av ti desc"
+      "gl co desc"
+      "link link link";
   font-size: .85em;
-  margin: 1rem 0;
-  font-weight: lighter;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   border-bottom: solid 1px rgba(0,0,0,.25);
   border-top: solid 1px rgba(0,0,0,.25);
 }
-.bio-desc {
-  max-width: 60%;
+
+.co{
+  grid-area: co;
 }
+
+.ti {
+  grid-area: ti;
+  margin: 0 0 auto 0;
+  padding: 0;
+}
+
+.bio-desc {
+  grid-area: desc;
+}
+
 .bio .links {
-  width: 100%;
+  grid-area: link;
   display: flex;
-  flex-direction: row;
+  width: 100%;
   justify-content: space-evenly;
 }
+
 /* ==========================================================================
 Comment Form
    ========================================================================== */
+
 .comment-form{
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 textarea{
   border: none;
   background: transparent;
@@ -192,6 +212,7 @@ textarea{
   padding: .5rem;
   margin: .25rem;
 }
+
 button{
   margin-left: auto;
   padding: .5rem 1rem;
@@ -199,6 +220,7 @@ button{
   border: none;
   color: #fff;
 }
+
 /* ==========================================================================
 Gutter
    ========================================================================== */
